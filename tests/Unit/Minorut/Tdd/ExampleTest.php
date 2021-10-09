@@ -11,6 +11,7 @@ class ExampleTest extends TestCase
      * A basic test example.
      *
      * @test
+     * @covers \Minorut\Tdd\Example::hello
      */
     public function it_returns_hello(): void
     {
