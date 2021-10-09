@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  backend:
+    image: php:8.0.9-alpine
+    tty: true
+    volumes:
+      - .:/app
+    working_dir: /app
+
+  composer:
+    image: composer:2
+    volumes:
+      - .:/app
+    working_dir: /app
